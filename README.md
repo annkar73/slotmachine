@@ -1,54 +1,77 @@
-# React + TypeScript + Vite
+## Slot Machine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är ett slot machine-projekt byggt med React och TypeScript. Spelet låter användaren snurra hjulen och försöka få en vinstkombination.
 
-Currently, two official plugins are available:
+### Funktioner
+- Snurrande hjul med animeringar
+- Start- och stoppfunktion
+- Dynamisk rendering av symboler
+- Hantering av vinstkombination (endast en rad)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation
+1. Klona detta repo:
+   ```sh
+   git clone https://github.com/ditt-anvandarnamn/slot-machine.git
+   ```
+2. Navigera till projektmappen:
+   ```sh
+   cd slot-machine
+   ```
+3. Installera beroenden:
+   ```sh
+   npm install
+   ```
+4. Starta utvecklingsservern:
+   ```sh
+   npm run dev
+   ```
 
-## Expanding the ESLint configuration
+### Teknologier
+- React
+- TypeScript
+- Styled Components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Kommande förbättringar
+- Ljud för snurr och vinst
+- Fler symboler och teman
+- Mobilanpassning
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Slot Machine (English)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This is a slot machine project built with React and TypeScript. The game allows users to spin the reels and try to land a winning combination.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Features
+- Spinning reels with animations
+- Start and stop functionality
+- Dynamic rendering of symbols
+- Winning combination handling (a single row)
+
+### Installation
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/slot-machine.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd slot-machine
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm run dev
+   ```
+
+### Technologies Used
+- React
+- TypeScript
+- Styled Components
+
+### Upcoming Improvements
+- Sound effects for spinning and winning
+- More symbols and themes
+- Mobile responsiveness
