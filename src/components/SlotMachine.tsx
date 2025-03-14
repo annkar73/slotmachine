@@ -101,6 +101,7 @@ const ResultText = styled.div`
   font-size: 24px;
   min-height: 30px;
   text-align: center;
+  height: 25px;
 `;
 
 const SlotMachine = () => {
