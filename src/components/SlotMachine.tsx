@@ -2,16 +2,16 @@ import { useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import isPropValid from "@emotion/is-prop-valid";
 
-// Symboler för slotsnurr
+// Symbols for spin
 const symbols = ["🍒", "🍋", "🍉", "🍊", "🍇", "🍓", "🍍", "🔔", "⭐", "💎"];
 
-// Skapar en realistisk snurranimation nedåt
+// create spinning animation downwards
 const spinAnimation = keyframes`
   0% { transform: translateY(-100%); }
   100% { transform: translateY(0%); }
 `;
 
-// SlotMachine-komponentens container
+// SlotMachine component container
 const SlotMachineContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@ const SlotMachineContainer = styled.div`
   margin: 0 auto;
 `;
 
-// Container för hjulen
+// Container for reels
 const ReelsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ const ReelsContainer = styled.div`
   position: relative;
 `;
 
-// Varje enskilt hjul
+// Each single reel
 const Reel = styled.div`
   width: 80px;
   height: 240px;
@@ -135,7 +135,7 @@ const SlotMachine = () => {
     });
   
     setReels((prevReels) => {
-      if (spinningReels[index]) {  // Endast uppdatera om hjulet snurrade
+      if (spinningReels[index]) {  // update only if reel was spinning
         const newReels = [...prevReels];
         const shiftAmount = Math.floor(Math.random() * symbols.length);
         newReels[index] = [
